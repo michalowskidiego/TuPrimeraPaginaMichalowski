@@ -8,5 +8,6 @@ def inicio(request):
 def portal(request, deportes, edad):
 
     club= Club(deportes=deportes, edad=edad)
+    club.save()
 
     return render(request, 'club.html', {'club': club})
