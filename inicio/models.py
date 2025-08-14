@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Club(models.Model):
+    deportes = models.CharField(max_length=20)
+    edad = models.CharField(max_length=2)
