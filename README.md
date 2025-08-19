@@ -1,0 +1,1 @@
+Inicié el programa, vinculé a github, cree la capeta del proyecto, cree los models, realicé las migraciones, cree los templates, cree los forms. por algun motivo no me toma el idioma "django.html" y hay cosas que no pude probar o me daba error. no logre darme cuenta si es debido a que no me toma ese lenguaje o hay errores en el codigo con respecto a los templates o una variable
