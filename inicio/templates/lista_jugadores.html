@@ -11,12 +11,20 @@
         <a href={% url "portal" %}>Ingreso de datos</a>
         <a href={% url "lista_jugadores" %}>Listado de jugardores</a>
     </nav>
-    <form action="" method="POST"></form>
-        {% csrf_token %}
+    <h1>Jugadores ingresados</h1>
+    {% if jugadores %}
 
-        {{formulario}}
+        <ul>
+                {% for jugador in jugadores %}
 
-        <input type="submit" value="Ingreso">
+                    <li>{{jugador}}</li>
 
+                {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>No hay jugadores ingresados</p>
+
+    {% endif %}
 </body>
 </html>
