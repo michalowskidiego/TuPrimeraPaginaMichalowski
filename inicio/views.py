@@ -13,13 +13,14 @@ def portal(request):
     if request.method == 'POST':
 
         formulario = FormularioClub(request.POST)
+
         if formulario.is_valid():
             info = formulario.cleaned_data
 
-        club= Club(deportes=info.get('deportes'), categoria=info.get('categoria'))
-        club.save()
+            club= Club(deportes=info.get('deportes'), categoria=info.get('categoria'))
+            club.save()
 
-        return redirect('lista_jugadores')
+            return redirect('lista_jugadores')
     
     else:
         formulario = FormularioClub()

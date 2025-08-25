@@ -12,6 +12,7 @@
         <a href={% url "lista_jugadores" %}>Listado de jugardores</a>
     </nav>
     <h1>Jugadores ingresados</h1>
+
     {% if jugadores %}
 
         <ul>
@@ -23,6 +24,7 @@
         </ul>
 
     {% else %}
+    
         <p>No hay jugadores ingresados</p>
 
     {% endif %}

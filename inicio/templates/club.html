@@ -11,12 +11,13 @@
         <a href={% url "portal" %}>Ingreso de datos</a>
         <a href={% url "lista_jugadores" %}>Listado de jugardores</a>
     </nav>
-    <form action="" method="POST"></form>
+    <form action="" method="POST">
         {% csrf_token %}
 
         {{formulario}}
 
         <input type="submit" value="Ingreso">
+    </form>
 
 </body>
 </html>
